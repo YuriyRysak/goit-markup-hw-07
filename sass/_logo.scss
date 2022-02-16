@@ -1,0 +1,24 @@
+.logo {
+  color:var(--accent-color);
+  font-family:Raleway,sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo:hover,.logo:focus  {
+  color:var(--primary-text-color);
+  
+}
+.color-logo-header {
+  color:var(--primary-text-color);
+}
+.color-logo-footer {
+  color:var(--top-line-bg);
+}
+.logo-footer {
+margin-bottom: 20px;
+}
