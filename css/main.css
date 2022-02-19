@@ -288,7 +288,16 @@ header {
   margin-right: 30px;
 }
 
-.list-item:last-child {
+.feature .list-item:last-child {
+  margin-right: 0;
+}
+
+.feature .team-list {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.feature .team-list:last-child {
   margin-right: 0;
 }
 
@@ -359,16 +368,6 @@ header {
   margin-bottom: 50px;
 }
 
-.feature .team-list {
-  width: 370px;
-  margin-right: 30px;
-}
-
-.team-list:last-child {
-  margin-right: 0;
-}
-
-/* Label */
 .label {
   position: relative;
 }
@@ -398,11 +397,14 @@ header {
   background-color: var(--filter-bg-color);
 }
 
-.name-list-icon {
-  background: #FFFFFF;
-  width: 270 px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+.name {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .name-list {
@@ -412,26 +414,19 @@ header {
   padding-right: auto;
 }
 
+.name-list-icon {
+  background: #FFFFFF;
+  width: 270 px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .name-list-icon:not(:nth-child(4n)) {
   margin-right: 30px;
 }
 
 .name-list-icon:nth-last-child(-n+4) {
   margin-bottom: 0;
-}
-
-/* .name-list:last-child { */
-/* margin-right: 0; */
-/* .feature .name-list-icon{ */
-/* margin-bottom: 30px; */
-.name {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 10px;
 }
 
 .occupation {
@@ -461,14 +456,13 @@ header {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.name-occupation-icon {
-  fill: currentColor;
-}
-
-.name-occupation-link:hover,
-.name-occupation-link:focus {
+.name-occupation-link:hover, .name-occupation-link:focus {
   background-color: var(--accent-color);
   color: var(--top-line-bg);
+}
+
+.name-occupation-icon {
+  fill: currentColor;
 }
 
 .name-occupation-item + .name-occupation-item {
@@ -498,14 +492,13 @@ header {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.name-client-icon {
-  fill: currentColor;
-}
-
-.name-client-link:hover,
-.name-client-link:focus {
+.name-client-link:hover, .name-client-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
+}
+
+.name-client-icon {
+  fill: currentColor;
 }
 
 .name-client-item + .name-client-item {

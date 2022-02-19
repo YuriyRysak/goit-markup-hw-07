@@ -43,10 +43,11 @@
      &-icon{
       fill:currentColor;
     }
+
+    &-item +&-item {
+      margin-left: 10px;
+    }
    }
-   
-   
+     
   
-   .name-social-item +.name-social-item {
-     margin-left: 10px;
-   }
+   
