@@ -1,0 +1,19 @@
+.page-footer {
+    background-color:var(--footer-bg-color) ;
+  }
+  .link-address {
+    color:var(--top-line-bg);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-box {
+   width: 231px;
+   margin-right: 70px;
+  }
+  .note-page {
+    margin-bottom: 9px;
+  }
+  .note-page:last-child {
+    margin-bottom: 0;
+  }
