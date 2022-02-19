@@ -13,7 +13,9 @@
   }
   .note-page {
     margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
-  .note-page:last-child {
-    margin-bottom: 0;
-  }
+  

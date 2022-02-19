@@ -6,7 +6,7 @@ header {
 .line {
     background-color: var(--top-line-bg);
   }  
-/* Navigation */
+
   .page-nav {
   display: flex;
   align-items: center;
@@ -42,9 +42,7 @@ header {
   .site-nav .nav-item + .nav-item {
   margin-left: 50px;
   }
-  /* .nav-item:last-child{
-  margin-right: 0;
-  } */
+  
 
    
   /* contacts selection */
@@ -95,11 +93,13 @@ header {
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .mail-icon:hover,
-  .mail-icon:focus{
+
+    &:hover,
+    &:focus{
     fill: var(--accent-color);
   }
+  }
+  
     
   .reference:hover,
   .reference:focus,
@@ -112,14 +112,16 @@ header {
  .current{
    color: var(--accent-color);
    position: relative;
+
+    &::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+  }    
  }
- .current::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  left: 0;
-  bottom: -1px;
-}    
+ 
