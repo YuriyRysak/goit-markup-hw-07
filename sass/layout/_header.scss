@@ -7,17 +7,17 @@ header {
     background-color: var(--top-line-bg);
   }  
 
-  .page-nav {
+  .navigation{
   display: flex;
   align-items: center;
 
   }
-  .site-nav{
+  .nav-list{
   display: flex;
   margin-left: 93px;
 
   }
-  .site-nav .link{
+  .nav-list .nav-list__link{
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -32,25 +32,25 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .site-nav .link:hover,
-  .site-nav .link:focus {
+  .nav-list .nav-list__link:hover,
+  .nav-list .nav-list__link:focus {
   color:var(--accent-color);
   }
-  .site-nav .link.current {
+  .nav-list .nav-list__link.current {
   color: var(--accent-color);
   } 
-  .site-nav .nav-item + .nav-item {
+  .nav-list .nav-list__item + .nav-list__item {
   margin-left: 50px;
   }
   
 
    
   /* contacts selection */
-      .contacts {
+      .header-contacts {
       display: flex;
       margin-left: auto;
     }
-    .reference {
+    .header-contacts__reference {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px; 
@@ -65,28 +65,16 @@ header {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       
     }
-    .contacts .contacts-item + .contacts-item {
+    .header-contacts .header-contacts__item + .header-contacts__item {
         margin-left: 50px;
     }
     
-    .page {
-    color: var(--address-text-color) ;  
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .contacts {
+    
+  .header-contacts {
   align-items: center;   
   }
     
-  .mail-icon {
+  .header-contacts__icon{
     align-items: center;
     margin-right: 10px;
     fill: currentColor;
@@ -101,11 +89,11 @@ header {
   }
   
     
-  .reference:hover,
-  .reference:focus,
-  .page:hover,.page:focus,
-  .link-address:hover,
-  .link-address:focus {
+  .header-contacts__reference:hover,
+  .header-contacts__reference:focus,
+  .contacts-list__link:hover,.contacts-list__link:focus,
+  .contacts-list__link--address:hover,
+  .contacts-list__link--address:focus {
     color: var(--accent-color);
   }
 /* current */
