@@ -13,29 +13,30 @@
     <link href="./css/main.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- Верхняя линия -->
-    <header class="section-header line">
+     <!-- Верхняя линия -->
+     <header class="header line">
         <!--navigation-->
     <div class="container">
-        <nav class="page-nav">
-            <div class="container-logo"><a class="logo" href="/">Web<span class="color-logo-header">Studio</span></a>
+        <nav class="navigation">
+            <div class="container-logo">
+                <a class="logo" href="/">Web<span class="logo-header__color">Studio</span></a>
             </div>
-            <ul class="site-nav list">
-                <li class="nav-item"><a href="./index.html" class="link ">Студия</a></li>
-                <li class="nav-item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li class="nav-item"><a href="#contacts" class="link">Контакты</a></li>
+            <ul class="nav-list list">
+                <li class="nav-list__item"><a href="./index.html" class="nav-list__link current">Студия</a></li>
+                <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
+                <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Контакты</a></li>
             </ul>
         <!--contacts selection-->
-            <ul class="contacts list">
-                <li class="contacts-item"><a class="reference" href="mailto:info@devstudio.com" 
-                    class="contacts-icon">
-                    <svg class="mail-icon" width="16" height="12">
+            <ul class="header-contacts list">
+                <li class="header-contacts__item"><a class="header-contacts__reference" href="mailto:info@devstudio.com" 
+                    >
+                    <svg class="header-contacts__icon" width="16" height="12">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a>
                 </li> 
-                <li class="contacts-item"><a class="reference" href="tel:+380961111111"
-                    class="contacts-icon">
-                    <svg class="mail-icon" width="10" height="16">
+                <li class="header-contacts__item"><a class="header-contacts__reference" href="tel:+380961111111"
+                    >
+                    <svg class="header-contacts__icon" width="10" height="16">
                         <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a>
                 </li>
@@ -163,17 +164,17 @@
     </main>
     <!-- Подвал -->
     </div>
-    <footer class="section page-footer cellar">
+    <footer class="section footer cellar">
         <div class="container footer-container ">
-            <div class="contacts-box">
-             <div class="logo-footer"><a class="logo" href="/">Web<span class="color-logo-footer">Studio</span></a></div>
+            <div class="footer-contacts">
+             <div class="logo-footer"><a class="logo" href="/">Web<span class="logo-footer__color">Studio</span></a></div>
               <!--address-->
                 <address id="contacts">
-                    <ul class="list">
-                            <li class="note-page" ><a class="page" href="https://goo.gl/maps/BZQKdsraXfpykEwU6" target="_blank"><span class="link-address">г. Киев,
+                    <ul class="contacts-list list">
+                            <li class="contacts-list__page" ><a class="contacts-list__link" href="https://goo.gl/maps/BZQKdsraXfpykEwU6" target="_blank"><span class="contacts-list__link--address">г. Киев,
                                         пр-т Леси Украинки, 26</span></a></li>
-                            <li class="note-page"><a class="page" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li class="note-page"><a class="page" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                            <li class="contacts-list__page"><a class="contacts-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="contacts-list__page"><a class="contacts-list__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
